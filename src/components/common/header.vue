@@ -1,4 +1,8 @@
 <template>
+<<<<<<< HEAD
+    <div id="header">
+        header
+=======
   <div id="header">
     <div>
       <img src="//static1.mtime.cn/html5/20190110181146/images/2014/logo_mtime.png">
@@ -9,6 +13,7 @@
           </router-link>
         </li>
       </ul>
+>>>>>>> 15f3263d0821411a7624f245c7494ff297075854
     </div>
   </div>
 </template>
