@@ -44,7 +44,7 @@ export default {
 <style>
 #header {
   width: 100%;
-  height: 0.98rem;
+  height: 0.9rem;
   position: fixed;
   justify-content: space-between;
   left: 0;
@@ -57,7 +57,7 @@ export default {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: .98rem;
+    height: .9rem;
 }
 #header > div > img{
     width: 15%;
