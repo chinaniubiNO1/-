@@ -17,9 +17,9 @@ const store = new Vuex.Store({
     getters,
     mutations,
     modules:{
-        home,
-        shop,
-        find
+        home,//首页
+        shop,//商城
+        find //发现
     }
 })
 
