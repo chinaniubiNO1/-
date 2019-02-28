@@ -1,10 +1,7 @@
 <template>
   <div id="app">
     <router-view/>
-<<<<<<< HEAD
-=======
     <FooterCom/>
->>>>>>> jiang
   </div>
 </template>
 
@@ -12,13 +9,9 @@
 
 export default {
   name: 'App',
-<<<<<<< HEAD
-  
-=======
   components:{
     "FooterCom":Footer
   }
->>>>>>> jiang
 }
 </script>
 
