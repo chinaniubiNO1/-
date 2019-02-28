@@ -3,10 +3,12 @@
     <div>
       <img src="//static1.mtime.cn/html5/20190110181146/images/2014/logo_mtime.png">
       <ul>
-        <li v-for="(item,index) in tabBar">
+        <li v-for = "(item,index) in tabBar" :key="item.id">
+        <!-- <li v-for="(item,index) in tabBar"> -->
           <router-link :to="{name:item.name}">
             <span>{{item.title}}</span>
           </router-link>
+       
         </li>
       </ul>
     </div>
@@ -21,7 +23,7 @@ export default {
       tabBar: [
         {
           name: "home",
-          title: "首页"
+          title: "首页"11111
         },
         {
           name: "shop",
