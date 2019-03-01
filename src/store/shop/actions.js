@@ -1,8 +1,9 @@
-import {HomeData} from "../../apis/home";
+import {ShopData} from "../../apis/shop";
 export default {
    async handleHomeData({commit}){
-        let data = await HomeData({os:3});
+        let data = await ShopData("t=201922820253122838");
         
-        commit("handleHomeData",data.data);
+        commit("handleShopData",data);
+        console.log(data);
     }
 }

@@ -1,5 +1,4 @@
 export default {
     banners:[],
-    grids:[],
-    tabs:[]
+    navigatorIcon:[],
 }
