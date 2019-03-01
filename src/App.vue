@@ -2,7 +2,6 @@
   <div id="app">
     <Header/>
     <router-view/>
-    <FooterCom/>
   </div>
 </template>
 
