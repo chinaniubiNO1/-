@@ -14,7 +14,6 @@ http.interceptors.request.use((config)=>{
     // if(method === "post"){
     //     config.data = qs.stringify(config.data);
     // }
-    console.log(config)
     return config;
 
 },(err)=>{
@@ -25,7 +24,6 @@ http.interceptors.request.use((config)=>{
 
 //响应拦截
 http.interceptors.response.use((res)=>{
-    console.log(res)
     return res.data;
 },(err)=>{
     return Promise.reject(err);

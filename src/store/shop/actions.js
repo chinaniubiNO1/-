@@ -1,9 +1,9 @@
-import {ShopData} from "../../apis/shop";
+import {ShopData} from "../../apis/shop.js";
+
 export default {
-   async handleHomeData({commit}){
-        let data = await ShopData("t=201922820253122838");
-        
+    async handleShopDate({commit}){
+        let data=await ShopData();
         commit("handleShopData",data);
-        console.log(data);
+        console.log(data)
     }
 }
