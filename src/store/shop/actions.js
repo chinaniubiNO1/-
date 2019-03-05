@@ -4,6 +4,6 @@ export default {
     async handleShopDate({commit}){
         let data=await ShopData();
         commit("handleShopData",data);
-        console.log(data)
+        //console.log(data)
     }
 }

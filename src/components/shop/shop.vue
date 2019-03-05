@@ -3,6 +3,7 @@
         <Input></Input>
         <Banner></Banner>
         <List></List>
+        <Cell></Cell>
     </div>
 </template>
 <script>
@@ -11,16 +12,17 @@ import axios from "axios";
 import Input from "./components/input";
 import Banner from "./components/banner";
 import List from "./components/list";
+import Cell from "./components/cell";
 
 export default {
     components:{
         "Input":Input,
         "Banner":Banner,
-        "List":List
+        "List":List,
+        "Cell":Cell
     },
     created() {
         this.handleShopDate()
-        console.log(this.state)
     },
     computed: {
         ...Vuex.mapState({

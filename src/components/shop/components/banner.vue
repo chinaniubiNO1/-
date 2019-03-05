@@ -1,11 +1,13 @@
 <template>
-  <div class="swiper-container banner-container" ref="bannerContainer">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" v-for="(item,index) in banners">
-        <img :src="item.image">
+  <div class="banner">
+    <div class="swiper-container banner-container" ref="bannerContainer">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" v-for="(item,index) in banners">
+          <img :src="item.image">
+        </div>
       </div>
     </div>
-    <div class="swiper-pagination banner-pagination"></div>
+    <div class="swiper-pagination banner-pagination" id="swiper-span"></div>
   </div>
 </template>
 
@@ -26,7 +28,7 @@ export default {
         autoplay: {
           disableOnInteraction: false
         },
-        loop:true,
+        loop: true,
         pagination: {
           el: ".banner-pagination"
         }
@@ -45,6 +47,15 @@ export default {
 .banner-container img {
   width: 100%;
   height: 100%;
+}
+
+.banner-pagination{
+  width: 100%;
+  height: .5rem;
+}
+#swiper-span>span{
+  width: 15px;
+  height: 15px;
 }
 </style>
 
