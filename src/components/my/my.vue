@@ -1,17 +1,18 @@
 <template>
-  <div>
-    <h2>my</h2>
-  
-  </div>
+    <div>
+        <Header/>
+    </div>
 </template>
-
 <script>
+import Header from "../common/header";
+
 export default {
- 
+    components: {
+    "Header": Header,
+    }
 }
 </script>
 
-
-<style scoped>
+<style  scoped>
 
 </style>

@@ -1,8 +1,16 @@
-import {HomeData} from "../../apis/home";
+import {HomeData , AreaData} from "../../apis/home.js";
 export default {
-   async handleHomeData({commit}){
-        let data = await HomeData({os:3});
+   async handleHomeDate({commit}){
+        let data = await HomeData();
         
-        commit("handleHomeData",data.data);
+        commit("handleHomeData",data)
+    },
+
+    async handleAreaDate({commit}){
+        let data = await AreaData();
+        
+        commit("handleAreaData",data);
+
+        console.log(data)
     }
 }

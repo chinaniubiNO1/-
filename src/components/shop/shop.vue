@@ -1,5 +1,5 @@
 <template>
-  <div class="shop">
+  <div class="shop shopWrapper" ref="shopWrapper">
     <Header></Header>
     <div>
       <Input></Input>
@@ -18,6 +18,7 @@ import Banner from "./components/banner";
 import List from "./components/list";
 import Cell from "./components/cell";
 import Topic from "./components/topic";
+import BScroll from "better-scroll";
 
 export default {
   components: {
@@ -50,7 +51,15 @@ export default {
     ...Vuex.mapMutations({
       handleShopData: "shop/handleShopData"
     })
-  }
+  },
+  mounted () {
+     this.scroll = new BScroll(this.$refs.shopWrapper,{
+       click:true,
+       scrollY:true,
+       tap:true
+     });
+     console.log(this.scroll)
+  }   
 }
 
 
@@ -61,4 +70,6 @@ export default {
   height: 100%;
   width: 100%;
 }
+
+
 </style>
