@@ -1,7 +1,8 @@
 export default {
     banners:[],
     navigatorIcon:[],
-    cellA:[],
-    cellB:[],
-    cellC:[]
+    cellA:{ },
+    cellB:{ },
+    cellC:{ },
+    topic:[]
 }

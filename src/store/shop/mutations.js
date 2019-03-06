@@ -5,5 +5,6 @@ export default {
         state.cellA = data.cellA;
         state.cellB = data.cellB;
         state.cellC = data.cellC;
+        state.topic = data.topic;
     }
 }
