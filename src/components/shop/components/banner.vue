@@ -3,7 +3,9 @@
     <div class="swiper-container banner-container" ref="bannerContainer">
       <div class="swiper-wrapper">
         <div class="swiper-slide" v-for="(item,index) in banners">
-          <img :src="item.image">
+          <a :href="item.url">
+            <img :src="item.image">
+          </a>
         </div>
       </div>
     </div>

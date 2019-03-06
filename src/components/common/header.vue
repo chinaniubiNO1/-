@@ -45,10 +45,8 @@ export default {
 #header {
   width: 100%;
   height: 0.9rem;
-  position: fixed;
+  display: flex;
   justify-content: space-between;
-  left: 0;
-  top: 0;
   background: #1c2635;
 }
 

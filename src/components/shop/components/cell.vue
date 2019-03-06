@@ -1,12 +1,12 @@
 <template>
   <div class="cell">
     <div class="cell-T">
-      <div class="cellA" v-for="(item,index) in cellA"><img :src="item.img"></div>
+      <div class="cellA"><a :href="this.cellA.url"><img :src="this.cellA.img"></a></div>
       <div>
-        <div class="cellC" v-for="(item,index) in cellC"><img :src="item.image"></div>
+        <div class="cellC" v-for="(item,index) in cellC"><a :href="item.url"><img :src="item.image"></a></div>
       </div>
     </div>
-    <div class="cellB" v-for="(item,index) in cellB"><img :src="item.img"></div>
+    <div class="cellB"><a :href="this.cellB.url"><img :src="this.cellB.url"></a></div>
   </div>
 </template>
 
@@ -33,6 +33,8 @@ export default {
     height: 8.7rem;
     background: #f2f356;
 }
-
+.cell>.cell-T{
+  display: flex;
+}
 
 </style>
