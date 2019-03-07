@@ -58,7 +58,6 @@ export default {
        scrollY:true,
        tap:true
      });
-     console.log(this.scroll)
   }   
 }
 
